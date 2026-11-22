@@ -1,0 +1,1202 @@
+# NONOLAND — ULTIMATE IMPLEMENTATION PROMPT
+# TEACHER PORTAL + ADVANCED VALIDATION + LEVEL 2 COMPLETE CURRICULUM
+
+You are acting as a Senior Full-Stack Software Architect, Senior Backend Engineer, Database Architect, Educational Technology Specialist, Child UX Designer, QA Engineer, and Application Security Engineer.
+
+Your mission is to extend the EXISTING NonoLand application by implementing two major production-oriented modules:
+
+1. A complete Teacher Management, Student Assignment, Question Bank, and Examination Management System.
+2. The complete Level 2 educational curriculum, including lessons, activities, question banks, assessments, progression, and student performance tracking.
+
+This is an implementation task, not a proposal or a UI-only exercise.
+
+You must inspect the existing application, authentication system, database, APIs, navigation, student profiles, parent profiles, and Level 1 implementation before changing anything.
+
+Do not rebuild the application from scratch.
+
+Do not replace existing working features with mock implementations.
+
+Do not break Level 1, existing student progress, existing accounts, or previously saved data.
+
+==================================================
+PART 1 — PROJECT INSPECTION AND ARCHITECTURE
+==================================================
+
+Before implementation:
+
+1. Inspect the current application structure.
+2. Identify the existing frontend framework and backend architecture.
+3. Identify the current authentication provider.
+4. Inspect the existing database schema and relationships.
+5. Identify how student accounts are created and linked to parents.
+6. Inspect the existing Exams tab.
+7. Inspect the existing Level 1 curriculum and its progress-tracking system.
+8. Identify existing APIs, storage services, and media-upload workflows.
+9. Identify any incomplete or simulated features.
+10. Prepare a safe integration plan.
+
+Reuse existing components, database structures, authentication services, and business logic whenever possible.
+
+Do not create duplicate tables or duplicate authentication systems.
+
+Do not migrate or delete existing records without a documented migration plan and backup strategy.
+
+If the current backend does not support a required capability, implement the missing backend functionality using the project's existing technology stack.
+
+Never claim a feature is functional if it only exists visually.
+
+==================================================
+PART 2 — COMPLETE ROLE-BASED AUTHENTICATION
+==================================================
+
+Extend the existing authentication system to support:
+
+- Student
+- Parent
+- Teacher
+- Admin
+
+Every authenticated user must have a server-verified role.
+
+LOGIN FLOW:
+
+1. User enters credentials.
+2. Backend authenticates the user.
+3. Backend retrieves the user's authorized role and account status.
+4. Backend validates whether the account is active.
+5. User is redirected to the appropriate dashboard.
+
+Teacher accounts must access the Teacher Dashboard.
+
+Student accounts must access the Student Dashboard.
+
+Parent accounts must access the Parent Dashboard.
+
+Admin accounts must access the Admin Dashboard.
+
+IMPORTANT SECURITY RULES:
+
+- Never trust a role supplied by the frontend.
+- Never allow users to change their own role.
+- Never authorize access based only on a hidden button or frontend route.
+- Enforce authorization on every protected backend endpoint.
+- Reject unauthorized API requests even if a user manually changes request parameters.
+- Do not expose administrative endpoints to teachers or students.
+- A teacher must not be able to become an Admin by editing a request.
+
+Only Admin can create, approve, deactivate, or modify teacher accounts and permissions.
+
+==================================================
+PART 3 — ADVANCED AUTHENTICATION VALIDATION
+==================================================
+
+Implement strong validation for Registration, Login, Password Reset, Email Verification, and Account Management.
+
+EMAIL VALIDATION:
+
+- Trim whitespace.
+- Normalize email addresses consistently.
+- Validate email format on frontend and backend.
+- Enforce unique email addresses at database level.
+- Prevent duplicate registrations.
+- Handle concurrent registration attempts safely.
+- Do not rely on frontend duplicate-email checks.
+- Use a database unique constraint.
+- Use safe, user-friendly authentication errors without unnecessarily revealing whether another person's account exists.
+
+PASSWORD VALIDATION:
+
+- Enforce a secure password policy.
+- Require appropriate minimum length.
+- Reject commonly compromised passwords when supported.
+- Confirm password during registration.
+- Never store plaintext passwords.
+- Use a secure authentication provider or an appropriate password-hashing algorithm.
+- Never log passwords, reset tokens, or authentication secrets.
+
+PASSWORD RESET:
+
+- Generate secure, unpredictable, single-use reset tokens.
+- Enforce token expiration.
+- Prevent reuse of expired or consumed tokens.
+- Rate-limit reset requests.
+- Invalidate relevant sessions when a password is changed, according to the authentication architecture.
+
+EMAIL VERIFICATION:
+
+- Implement email verification where supported.
+- Do not mark an account as verified before successful verification.
+- Prevent verification-token reuse.
+- Handle expired verification links safely.
+
+LOGIN PROTECTION:
+
+- Rate-limit login attempts.
+- Apply progressive throttling.
+- Protect against brute-force attacks.
+- Implement secure session expiration.
+- Support logout and session revocation.
+- Protect sensitive operations with reauthentication where appropriate.
+- Avoid permanent account-lockout behavior that can be abused to deny access.
+
+INPUT VALIDATION:
+
+Validate all input on the backend, including:
+
+- Names.
+- Emails.
+- Passwords.
+- Dates.
+- Age.
+- Phone numbers where collected.
+- IDs.
+- Text fields.
+- Question content.
+- Answer choices.
+- Scores.
+- File metadata.
+- Exam dates and durations.
+- Uploaded media.
+
+Use allowlists, strict data types, maximum lengths, and appropriate business rules.
+
+SECURITY TESTING:
+
+Protect against:
+
+- SQL Injection.
+- NoSQL Injection where applicable.
+- XSS.
+- CSRF where applicable.
+- IDOR.
+- Broken Access Control.
+- Mass Assignment.
+- Path Traversal.
+- Malicious File Uploads.
+- Replay Attacks.
+- Duplicate Requests.
+- Unauthorized Data Access.
+
+Use parameterized database queries and secure API validation.
+
+Never expose secrets or API keys in frontend code.
+
+Do not claim legal or regulatory compliance without an actual compliance assessment.
+
+==================================================
+PART 4 — TEACHER MANAGEMENT SYSTEM
+==================================================
+
+Create a complete Teacher Portal integrated into the existing NonoLand application.
+
+TEACHER ACCOUNT MANAGEMENT:
+
+Admin must be able to:
+
+- Create teacher accounts.
+- Approve teacher registrations.
+- Activate or deactivate teachers.
+- Assign teachers to classes.
+- Assign students to teachers.
+- Change teacher permissions.
+- View teacher activity.
+- Review audit logs.
+
+A teacher must only access students and classes explicitly assigned to that teacher.
+
+TEACHER DASHBOARD:
+
+Create the following sections:
+
+1. Dashboard Overview.
+2. My Classes.
+3. My Students.
+4. Create Exam.
+5. My Exams.
+6. Question Bank.
+7. Assign Exams.
+8. Exam Results.
+9. Draft Exams.
+10. Published Exams.
+11. Student Performance.
+12. Profile and Account Settings.
+
+Display useful statistics based on actual database records:
+
+- Total assigned students.
+- Active classes.
+- Total created exams.
+- Published exams.
+- Pending exams.
+- Completed exams.
+- Average exam scores.
+- Students needing additional practice.
+
+Never display invented statistics.
+
+==================================================
+PART 5 — CLASSES AND STUDENT ASSIGNMENTS
+==================================================
+
+Build a real Classes & Groups management system.
+
+Admin can:
+
+- Create classes.
+- Edit class details.
+- Assign teachers.
+- Add or remove students.
+- Activate or deactivate classes.
+- View class performance.
+
+Teachers can:
+
+- View their assigned classes.
+- View their assigned students.
+- Search students within their authorized classes.
+- Filter students by level and age group.
+- View permitted student learning progress.
+
+Teachers cannot search or access all children in the application without authorization.
+
+Each student assignment must be linked to the appropriate class, teacher, and student records.
+
+Prevent duplicate class membership and unauthorized reassignment.
+
+==================================================
+PART 6 — TEACHER QUESTION BANK
+==================================================
+
+Create a reusable Question Bank.
+
+Teachers can:
+
+- Create questions.
+- Edit questions.
+- Delete questions.
+- Duplicate questions.
+- Preview questions.
+- Categorize questions.
+- Search and filter questions.
+- Import questions in bulk.
+- Organize questions by subject, lesson, level, and difficulty.
+
+Supported question types:
+
+1. Multiple Choice.
+2. True / False.
+3. Picture Identification.
+4. Audio Identification.
+5. Matching.
+6. Fill in the Blank.
+7. Short Answer where appropriate.
+8. Ordering and Sequencing.
+
+Every question must contain:
+
+- Unique question ID.
+- Subject.
+- Curriculum level.
+- Lesson ID.
+- Question type.
+- Arabic question text.
+- English question text when applicable.
+- Optional image.
+- Optional audio.
+- Answer options.
+- Correct answer.
+- Marks.
+- Difficulty.
+- Explanation.
+- Feedback for correct answers.
+- Feedback for incorrect answers.
+- Active status.
+- Content version.
+
+Support Arabic RTL and English LTR.
+
+QUESTION VALIDATION:
+
+- Every multiple-choice question must have valid answer options.
+- There must be exactly one correct option unless the question explicitly supports multiple correct answers.
+- No duplicate options unless intentionally allowed.
+- Correct answer must belong to the available options.
+- Required question text cannot be empty.
+- Marks must be positive and within configured limits.
+- Media must be valid and accessible.
+- Question difficulty must use approved values.
+- A question must be linked to a valid subject and lesson.
+- A question cannot reference a deleted or unauthorized lesson.
+- Prevent duplicate question IDs.
+- Validate imported questions before committing them.
+
+==================================================
+PART 7 — BULK QUESTION IMPORT
+==================================================
+
+Support Excel and CSV question import using a documented template.
+
+Required import workflow:
+
+1. Teacher downloads the official template.
+2. Teacher fills the template.
+3. Teacher uploads the file.
+4. Backend validates file type and size.
+5. Backend parses the content.
+6. Backend validates every row.
+7. Show a preview of valid and invalid records.
+8. Display exact row numbers and error descriptions.
+9. Allow correction and re-upload.
+10. Save valid records only after explicit confirmation.
+
+Do not silently ignore invalid records.
+
+Prevent malicious file uploads.
+
+Do not accept executable files or unsupported formats.
+
+Validate MIME type and actual file content.
+
+Store uploaded files securely outside public executable paths.
+
+Never trust a file extension alone.
+
+Use transaction-safe import operations and avoid partial database corruption.
+
+==================================================
+PART 8 — EXAM CREATION AND MANAGEMENT
+==================================================
+
+Teachers can create exams using questions from their authorized Question Bank.
+
+Exam configuration:
+
+- Arabic and English exam titles.
+- Subject.
+- Curriculum level.
+- Target age group.
+- Associated lessons.
+- Exam description.
+- Total questions.
+- Total marks.
+- Passing percentage.
+- Duration.
+- Start date.
+- End date.
+- Allowed attempts.
+- Question randomization.
+- Answer randomization.
+- Show or hide results.
+- Show or hide correct answers after submission.
+- Exam status.
+
+Exam statuses:
+
+- Draft.
+- Pending Review.
+- Published.
+- Scheduled.
+- Active.
+- Expired.
+- Suspended.
+- Archived.
+
+The teacher must be able to preview the entire exam before publishing.
+
+Validate that:
+
+- The exam has at least one valid question.
+- Total marks equal the sum of question marks.
+- Passing percentage is within the allowed range.
+- Duration is valid.
+- Start date is before end date.
+- Selected lessons belong to the chosen level and subject.
+- All required question assets exist.
+- The teacher has permission to use the selected questions.
+
+Allow Admin review when required.
+
+==================================================
+PART 9 — ASSIGN EXAMS TO SELECTED STUDENTS
+==================================================
+
+This is a core requirement.
+
+Before publishing an exam, the teacher must select the students who should receive it.
+
+Provide:
+
+- Student search.
+- Class selection.
+- Group selection.
+- Individual student selection.
+- Multi-student selection.
+- Select all authorized students.
+- Deselect all.
+- Student-level filtering.
+- Assignment preview.
+
+The teacher must see a clear confirmation showing the selected students before publishing.
+
+Store each assignment with:
+
+- Assignment ID.
+- Exam ID.
+- Student ID.
+- Teacher ID.
+- Class ID where applicable.
+- Assignment date.
+- Available start date.
+- Deadline.
+- Assignment status.
+
+Prevent duplicate active assignments for the same exam and student unless the system explicitly supports reassignment.
+
+Enforce assignment authorization on the backend.
+
+A teacher cannot assign an exam to a student outside the teacher's authorized scope.
+
+==================================================
+PART 10 — STUDENT EXAMS TAB
+==================================================
+
+Integrate teacher-created exams into the existing Student Dashboard.
+
+The Exams tab must display only exams assigned to the currently authenticated student.
+
+Categories:
+
+- Available Exams.
+- Upcoming Exams.
+- In Progress.
+- Completed Exams.
+- Results.
+
+Each exam card displays:
+
+- Exam title.
+- Subject.
+- Level.
+- Number of questions.
+- Total marks.
+- Duration.
+- Availability date.
+- Deadline.
+- Attempt status.
+
+Provide a Start Exam button only when the exam is available.
+
+The backend must verify exam assignment and availability every time the student accesses an exam.
+
+A student must never be able to:
+
+- Open an unassigned exam.
+- Access another student's exam.
+- Start an unpublished exam.
+- Start an exam before its start date.
+- Submit after the deadline unless an authorized extension exists.
+- Modify the score.
+- Change the correct answers.
+- Bypass attempt limits.
+
+==================================================
+PART 11 — SECURE EXAM EXECUTION AND GRADING
+==================================================
+
+Create a child-friendly exam interface.
+
+Requirements:
+
+- Clear instructions.
+- One question at a time where appropriate.
+- Large touch-friendly buttons.
+- Image and audio support.
+- Progress indicator.
+- Optional countdown timer.
+- Save answers safely.
+- Resume an interrupted attempt where allowed.
+- Confirmation before final submission.
+
+BACKEND GRADING:
+
+- Calculate all scores on the backend.
+- Never accept the final score from the client.
+- Never trust client-submitted correct/incorrect flags.
+- Verify every submitted answer against the protected answer key.
+- Prevent duplicate grading.
+- Enforce attempt limits.
+- Prevent answer changes after final submission.
+- Record timestamps.
+- Protect against duplicate requests and replay attempts.
+
+Store:
+
+- Student ID.
+- Teacher ID.
+- Exam ID.
+- Attempt ID.
+- Submitted answers.
+- Score.
+- Percentage.
+- Pass/fail status.
+- Start time.
+- Submission time.
+- Attempt number.
+
+Teachers can view only authorized exam results.
+
+Parents can view permitted results for their own children.
+
+Students can view only their own results and only the information allowed by exam settings.
+
+==================================================
+PART 12 — LEVEL 2 COMPLETE EDUCATIONAL CURRICULUM
+==================================================
+
+Create and implement the complete Level 2 curriculum.
+
+Level Name:
+
+Little Explorers — المستكشفون
+
+Target Age:
+
+5–6 years.
+
+Educational philosophy:
+
+Level 2 must build on Level 1 rather than repeat it.
+
+The curriculum should develop:
+
+- Letter recognition.
+- Phonemic awareness.
+- Early reading.
+- Early writing.
+- Vocabulary.
+- Number sense.
+- Early arithmetic.
+- Logical thinking.
+- Classification.
+- Patterns.
+- Visual recognition.
+- Listening.
+- Memory.
+- Problem-solving.
+- Independence.
+
+Use age-appropriate language and activities.
+
+Do not make the lessons too long or academically overwhelming.
+
+Use a gradual progression from guided activities to independent challenges.
+
+The child should learn through stories, characters, visual examples, sounds, exploration, and interactive games.
+
+The curriculum must be complete, not a collection of empty lesson cards.
+
+--------------------------------------------------
+LEVEL 2 — SUBJECT 1: ARABIC
+--------------------------------------------------
+
+Create a complete Arabic learning program.
+
+Required content:
+
+1. Review all 28 Arabic letters.
+2. Recognize letters in different fonts and visual contexts.
+3. Identify initial, middle, and final letter positions in simple words.
+4. Introduce basic letter connections.
+5. Practice writing individual letters.
+6. Practice writing simple connected letter forms.
+7. Recognize short vowels: Fatha, Kasra, Damma.
+8. Introduce Sukoon and Shadda through simple examples.
+9. Blend simple sounds.
+10. Read simple syllables.
+11. Read familiar two-letter and three-letter words.
+12. Match spoken words with pictures.
+13. Build simple words from letters.
+14. Complete missing letters.
+15. Identify beginning and ending sounds.
+16. Develop age-appropriate vocabulary.
+17. Read short, simple sentences with picture support.
+
+Use familiar Arabic vocabulary suitable for children.
+
+Avoid teaching confusing spelling rules as if they were universal rules.
+
+Clearly distinguish letter names from letter sounds.
+
+Do not require advanced reading fluency at this age.
+
+Create a progressive sequence of lessons with unique IDs.
+
+--------------------------------------------------
+LEVEL 2 — SUBJECT 2: ENGLISH
+--------------------------------------------------
+
+Create a complete English early-learning program.
+
+Required content:
+
+1. Review uppercase and lowercase A–Z.
+2. Identify letter names and phonetic sounds.
+3. Match uppercase and lowercase letters.
+4. Practice beginning sounds.
+5. Introduce common CVC words.
+6. Blend simple phonemes.
+7. Segment simple words into sounds.
+8. Recognize familiar sight words appropriate to the age group.
+9. Match words to pictures.
+10. Complete missing letters.
+11. Identify rhyming words.
+12. Recognize simple word families.
+13. Read simple words.
+14. Build short sentences with picture support.
+15. Develop basic vocabulary.
+16. Listen and choose the correct word.
+
+Use accurate pronunciation and clear audio.
+
+Never confuse the letter name with its phonetic sound.
+
+--------------------------------------------------
+LEVEL 2 — SUBJECT 3: MATHEMATICS
+--------------------------------------------------
+
+Create a progressive mathematics program.
+
+Required content:
+
+1. Recognize numbers from 0 to 20.
+2. Count objects from 0 to 20.
+3. Match numbers with quantities.
+4. Compare quantities.
+5. Understand more, less, and equal.
+6. Order numbers.
+7. Identify missing numbers.
+8. Introduce before, after, and between.
+9. Count forward and backward.
+10. Understand number decomposition.
+11. Introduce addition within 10.
+12. Introduce subtraction within 10.
+13. Solve visual addition problems.
+14. Solve visual subtraction problems.
+15. Recognize basic shapes.
+16. Identify basic 2D shapes.
+17. Compare sizes and lengths.
+18. Understand simple measurement concepts.
+19. Identify repeating patterns.
+20. Solve simple mathematical puzzles.
+
+Use objects, toys, animals, fruit, and real-world scenes.
+
+Do not introduce abstract calculations without visual support.
+
+--------------------------------------------------
+LEVEL 2 — SUBJECT 4: COLORS AND SHAPES
+--------------------------------------------------
+
+Expand the Level 1 color curriculum.
+
+Required content:
+
+- Review the ten basic colors.
+- Identify colors in different objects.
+- Match color names with visual examples.
+- Sort objects by color.
+- Recognize color combinations.
+- Recognize basic shapes.
+- Identify circles, squares, triangles, rectangles, ovals, and other age-appropriate shapes.
+- Classify objects by shape.
+- Compare shapes and sizes.
+- Identify shapes in real-world environments.
+- Complete visual patterns.
+
+Never rely on color alone to communicate an answer. Include text, shapes, or audio support.
+
+--------------------------------------------------
+LEVEL 2 — SUBJECT 5: LOGIC AND THINKING
+--------------------------------------------------
+
+Create a dedicated Logic & Thinking subject.
+
+Required activities:
+
+- Find the odd one out.
+- Complete visual sequences.
+- Identify patterns.
+- Match related objects.
+- Sort objects into categories.
+- Identify similarities and differences.
+- Solve simple visual puzzles.
+- Understand cause and effect.
+- Complete simple mazes.
+- Identify what comes next.
+- Understand basic spatial relationships.
+- Practice memory games.
+- Solve age-appropriate problem-solving challenges.
+
+--------------------------------------------------
+LEVEL 2 — SUBJECT 6: WORLD AROUND ME
+--------------------------------------------------
+
+Create an educational subject introducing the child's environment.
+
+Required topics:
+
+- Animals and their habitats.
+- Animal sounds.
+- Plants and nature.
+- Human body basics.
+- Healthy habits.
+- Food groups and everyday food choices.
+- Family and relationships.
+- Community helpers and professions.
+- Transportation.
+- Weather and seasons.
+- Day and night.
+- Basic safety awareness.
+- Everyday objects.
+- Environment and caring for nature.
+
+Use positive, simple, age-appropriate explanations.
+
+Do not collect sensitive personal information from children through these lessons.
+
+==================================================
+PART 13 — LESSON STRUCTURE AND CONTENT QUALITY
+==================================================
+
+Every Level 2 lesson must contain:
+
+- Unique lesson ID.
+- Subject ID.
+- Level ID.
+- Lesson number.
+- Arabic title.
+- English title.
+- Learning objective.
+- Prerequisite lesson IDs where appropriate.
+- Introduction by Nono or another NonoLand character.
+- Actual teaching content.
+- Examples.
+- Vocabulary.
+- Image assets.
+- Audio assets where appropriate.
+- Interactive activities.
+- Practice challenges.
+- Independent assessment.
+- Correct answers.
+- Feedback for correct answers.
+- Feedback for incorrect answers.
+- Completion criteria.
+- Recommended review date.
+- Estimated duration.
+- Difficulty level.
+
+Every lesson should follow:
+
+1. Welcome.
+2. Introduce the learning objective.
+3. Explain and demonstrate.
+4. Show visual examples.
+5. Listen and observe.
+6. Guided practice.
+7. Independent challenge.
+8. Feedback.
+9. Short assessment.
+10. Lesson completion and progress update.
+
+Use at least six meaningful activity types across each lesson, selected according to the learning objective.
+
+Do not force irrelevant activities into every lesson.
+
+Use varied examples and questions.
+
+Do not duplicate the same question or image throughout the lesson and assessment.
+
+All Arabic and English content must be proofread.
+
+All audio and image assets must be original, properly licensed, or otherwise legally usable.
+
+Do not use placeholder text as completed educational content.
+
+==================================================
+PART 14 — LEVEL 2 QUESTION BANK AND ASSESSMENTS
+==================================================
+
+Build a structured question bank for every Level 2 subject.
+
+Questions must be linked to actual lessons and learning objectives.
+
+Provide multiple question types and difficulty levels.
+
+Each lesson must have:
+
+- Practice questions.
+- Independent assessment questions.
+- New examples not previously used in the teaching section.
+- Correct answer definitions.
+- Feedback.
+- Scoring rules.
+
+Do not evaluate a child only through memorization.
+
+Assess understanding using new examples.
+
+Implement a comprehensive Level 2 assessment system.
+
+A larger level assessment can include 40 questions where appropriate, distributed across the subjects and lessons the child has actually studied.
+
+If a 40-question exam is used:
+
+- 40 questions total.
+- 1 mark per question unless configured otherwise.
+- 40 total marks.
+- 70% passing threshold.
+- Passing score = 28/40.
+
+The assessment must not include lessons the child has not been taught.
+
+Do not unlock a paid assessment until the relevant curriculum content and assessment bank are complete and verified.
+
+If paid assessments are enabled, price must be configurable by Admin, with 50 EGP as an initial configurable default rather than a hardcoded frontend value.
+
+Payment verification must happen on the backend.
+
+Do not issue a certificate based on a client-supplied score.
+
+==================================================
+PART 15 — LEVEL PROGRESSION AND PERSONALIZATION
+==================================================
+
+Preserve Level 1.
+
+Add Level 2 without resetting any existing progress.
+
+The system should track each child separately.
+
+Track:
+
+- Lessons started.
+- Lessons completed.
+- Activities completed.
+- Correct answers.
+- Incorrect answers.
+- Assessment results.
+- Time spent where appropriate.
+- Skills demonstrated.
+- Skills needing revision.
+- Last practice date.
+- Recommended review date.
+
+Use meaningful progress states:
+
+- Not Started.
+- Learning.
+- Practicing.
+- Improving.
+- Demonstrated.
+- Needs Revision.
+
+Do not mark a skill as mastered after a single correct answer.
+
+Use spaced review and fresh examples.
+
+Suggested review schedule:
+
+- Next day.
+- After 3 days.
+- After 7 days.
+- Further review based on performance.
+
+If the child struggles:
+
+- Explain using a different example.
+- Offer an easier activity.
+- Reduce unnecessary cognitive load.
+- Encourage the child.
+- Do not punish the child or remove previously earned progress.
+
+Level 2 should be available through appropriate progression rules.
+
+Admin and authorized educators should be able to configure progression requirements.
+
+Do not automatically assume that every child must complete every Level 1 activity perfectly before any Level 2 content can be explored.
+
+Use placement and demonstrated skills where appropriate.
+
+==================================================
+PART 16 — PARENT DASHBOARD INTEGRATION
+==================================================
+
+Integrate teacher-assigned exams and Level 2 progress into the existing Parent Dashboard.
+
+Parents can view:
+
+- Their own children's assigned exams.
+- Exam completion status.
+- Exam scores when released.
+- Subject performance.
+- Completed Level 2 lessons.
+- Skills demonstrated.
+- Skills requiring practice.
+- Recommended activities.
+
+Parents must never access another family's student records.
+
+Do not expose private teacher notes unless explicitly authorized.
+
+==================================================
+PART 17 — DATABASE AND DATA INTEGRITY
+==================================================
+
+Inspect and extend the existing database.
+
+Use existing structures whenever possible.
+
+Potential entities, subject to existing schema inspection:
+
+- USERS
+- USER_ROLES
+- TEACHER_PROFILES
+- STUDENT_PROFILES
+- PARENT_STUDENT_RELATIONSHIPS
+- CLASSES
+- CLASS_STUDENTS
+- TEACHER_STUDENT_ASSIGNMENTS
+- SUBJECTS
+- CURRICULUM_LEVELS
+- LESSONS
+- LESSON_ACTIVITIES
+- QUESTION_BANK
+- QUESTION_OPTIONS
+- EXAMS
+- EXAM_QUESTIONS
+- EXAM_ASSIGNMENTS
+- EXAM_ATTEMPTS
+- STUDENT_ANSWERS
+- EXAM_RESULTS
+- STUDENT_LESSON_PROGRESS
+- STUDENT_SKILL_PROGRESS
+- CONTENT_ASSETS
+- AUDIT_LOGS
+
+Enforce:
+
+- Primary keys.
+- Foreign keys.
+- Unique constraints.
+- Check constraints.
+- Appropriate indexes.
+- Transaction integrity.
+- Referential integrity.
+- Secure data access.
+
+Use migrations that preserve existing records.
+
+Use versioning for educational content so updates do not corrupt historical exam results.
+
+==================================================
+PART 18 — CHILD SAFETY AND PRIVACY
+==================================================
+
+NonoLand is designed for children.
+
+Maintain:
+
+- Parent gate.
+- Restricted child permissions.
+- No open public chat.
+- No unrestricted stranger contact.
+- No public student profiles.
+- No unnecessary collection of personal information.
+- No targeted advertising to children.
+- No exposure of student names or results to unauthorized users.
+- Secure parent-child relationships.
+- Safe media handling.
+- Age-appropriate interfaces.
+- Appropriate screen-time and break reminders.
+
+Do not require camera or microphone permissions for normal educational activities.
+
+All teacher access to child data must be authorized and auditable.
+
+==================================================
+PART 19 — USER EXPERIENCE AND DESIGN
+==================================================
+
+Maintain NonoLand's established visual identity.
+
+The application must remain:
+
+- Colorful.
+- Premium.
+- Friendly.
+- Playful.
+- Easy for children.
+- Professional for teachers.
+- Clear for parents.
+- Consistent across mobile and desktop layouts.
+
+Use:
+
+- Arabic RTL.
+- English LTR.
+- Responsive layouts.
+- Accessible touch targets.
+- Clear loading states.
+- Empty states.
+- Validation messages.
+- Success and error notifications.
+- Confirmation before destructive operations.
+
+Teacher Portal should look professional and efficient.
+
+Student Exams should remain simple and child-friendly.
+
+Do not expose administrative complexity to children.
+
+==================================================
+PART 20 — TESTING AND ACCEPTANCE CRITERIA
+==================================================
+
+Do not consider the project complete until the following workflows have been tested.
+
+TEST 1 — Teacher Authentication:
+
+- Teacher logs in successfully.
+- Teacher sees Teacher Dashboard.
+- Teacher cannot access Admin Dashboard.
+- Student cannot access Teacher Dashboard.
+- Parent cannot access Teacher Dashboard.
+
+TEST 2 — Teacher Authorization:
+
+- Teacher can view assigned students.
+- Teacher cannot access unauthorized students.
+- Teacher cannot modify another teacher's exams.
+- Teacher cannot assign exams outside authorized classes.
+
+TEST 3 — Question Management:
+
+- Teacher creates a question.
+- Teacher edits a question.
+- Teacher deletes an authorized question.
+- Invalid questions are rejected.
+- Duplicate or malformed data is handled safely.
+
+TEST 4 — Bulk Import:
+
+- Valid CSV/Excel file is accepted.
+- Invalid file type is rejected.
+- Invalid rows show exact errors.
+- Duplicate questions are handled.
+- Failed imports do not corrupt existing records.
+
+TEST 5 — Exam Assignment:
+
+- Teacher creates an exam.
+- Teacher selects specific students.
+- Exam is published.
+- Only assigned students see it.
+- Unassigned students cannot access it by manually changing URLs or API parameters.
+
+TEST 6 — Exam Execution:
+
+- Student starts an available exam.
+- Student answers questions.
+- Answers are saved.
+- Submission is processed once.
+- Backend calculates the correct score.
+- Duplicate submission is prevented.
+- Correct answers remain protected.
+
+TEST 7 — Results:
+
+- Teacher sees authorized results.
+- Parent sees only their own children's permitted results.
+- Student sees only their own released results.
+
+TEST 8 — Level 2 Curriculum:
+
+- Every planned Level 2 lesson exists.
+- Lesson content is complete.
+- Activities work.
+- Questions are linked correctly.
+- Assessments use fresh examples.
+- Progress is saved per student.
+- Review recommendations work.
+- Existing Level 1 progress remains intact.
+
+TEST 9 — Security:
+
+- Test unauthorized role changes.
+- Test IDOR.
+- Test invalid IDs.
+- Test duplicate requests.
+- Test expired sessions.
+- Test invalid uploads.
+- Test SQL injection and XSS protections.
+- Test rate limits.
+- Test direct API access.
+
+==================================================
+PART 21 — REQUIRED IMPLEMENTATION DELIVERABLES
+==================================================
+
+Complete the work in a structured sequence.
+
+PHASE A:
+Inspect the existing project and document the architecture and integration points.
+
+PHASE B:
+Implement role-based authentication, strong validation, and server-side authorization.
+
+PHASE C:
+Implement Teacher Dashboard, teacher management, classes, and student assignments.
+
+PHASE D:
+Implement Question Bank, bulk import, exam creation, and exam assignment.
+
+PHASE E:
+Integrate assigned exams into the existing Student Exams tab.
+
+PHASE F:
+Implement secure exam execution, grading, results, and Parent Dashboard integration.
+
+PHASE G:
+Design and implement the full Level 2 curriculum across all six subjects.
+
+PHASE H:
+Create real lesson content, activities, question banks, and assessments.
+
+PHASE I:
+Implement progress tracking, skill evaluation, review recommendations, and level progression.
+
+PHASE J:
+Run end-to-end testing, security validation, and regression testing for Level 1.
+
+For every phase:
+
+- Implement actual functionality.
+- Connect the frontend and backend.
+- Save real data.
+- Validate permissions.
+- Test success and failure cases.
+- Report completed functionality.
+- Report incomplete functionality honestly.
+- Document any required environment variables or external service configuration.
+
+FINAL REQUIREMENT:
+
+Do not deliver only a plan, prototype, dashboard mockup, static JSON examples, or placeholder lesson cards.
+
+Deliver a fully integrated implementation using the existing NonoLand architecture.
+
+If the entire implementation cannot fit in one execution cycle, continue in clearly defined phases without pretending unfinished phases are complete.
+
+Preserve all existing data and working features.
+
+Prioritize data integrity, child safety, educational quality, strong validation, and maintainable architecture.

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1795028449935,
+      "tag": "0000_clear_maddog",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795092320744,
+      "tag": "0001_webauthn_passkeys",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795272000000,
+      "tag": "0002_quran_world",
+      "breakpoints": true
+    }
+  ]
+}

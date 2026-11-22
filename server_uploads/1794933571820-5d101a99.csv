@@ -1,0 +1,3 @@
+subject,level,lessonId,questionType,promptAr,promptEn,optionA_ar,optionA_en,optionB_ar,optionB_en,optionC_ar,optionC_en,optionD_ar,optionD_en,correctOption,acceptedAnswers,matchingPairs,correctOrder,marks,difficulty,explanationAr,explanationEn,audioText
+english,2,L2-EN01,multiple-choice,ما صوت sh؟,What sound is sh?,ش,sh,تش,ch,,,,,a,,,,2,easy,sh makes sh sound,sh sounds like sh,
+english,2,INVALID-LESSON,multiple-choice,سؤال خاطئ,Invalid row,أ,A,ب,B,,,,,a,,,,2,easy,,,

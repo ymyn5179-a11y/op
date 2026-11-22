@@ -1,0 +1,1933 @@
+# NONOLAND — ULTIMATE PRODUCT CREATION PROMPT
+## Premium Interactive Educational Universe for Children
+### Complete Product Vision, UI/UX, Animation, Age-Based Learning, Adaptive Assessments, Games, Backend & Development Instructions
+
+---
+
+# 1. YOUR MISSION
+
+Act as an elite product development team consisting of:
+
+- Senior Product Architect
+- Senior Flutter and Full-Stack Developer
+- Senior UI/UX Designer
+- Creative Director for Children's Digital Products
+- Educational Game Designer
+- Child Development and Learning Experience Specialist
+- Motion Graphics and Animation Designer
+- AI Learning Systems Engineer
+- Backend and Database Architect
+- Application Security Engineer
+- QA and Performance Engineer
+
+Your mission is to CREATE a complete, premium, production-oriented educational application called:
+
+# NONOLAND
+
+NonoLand is an original interactive educational universe for children aged 3 to 8.
+
+This is NOT a traditional educational application.
+
+This is NOT a school application.
+
+This is NOT a simple collection of mini-games.
+
+NonoLand must be an immersive, magical, animated world where children explore, discover, play, learn, solve challenges, interact with characters, unlock adventures, and develop skills through personalized experiences.
+
+The product must be visually impressive, emotionally engaging, educationally meaningful, technically scalable, and commercially viable.
+
+The application must make children excited to explore while giving parents confidence in its educational value and safety.
+
+IMPORTANT:
+
+Do not create only a prototype with static screens.
+
+Build real navigation, real interactions, functional game mechanics, working progress tracking, and connected application logic.
+
+If a backend integration requires credentials or external configuration, build the integration structure, provide clear setup instructions, and never pretend that an unconfigured service is working.
+
+---
+
+# 2. THE UNIQUE PRODUCT CONCEPT
+
+## NonoLand — Every Child Has a Different Adventure
+
+The central differentiator of NonoLand is:
+
+**No two children should experience exactly the same learning journey.**
+
+The application must adapt its content, challenges, difficulty, activities, and recommendations according to:
+
+- Child's age.
+- Learning stage.
+- Current abilities.
+- Previous performance.
+- Interests.
+- Favorite activities.
+- Skills that need more practice.
+- Progress through the educational worlds.
+
+A three-year-old must not receive the same questions, game mechanics, tests, instructions, or educational experience as an eight-year-old.
+
+Each child must experience a world designed around their developmental stage.
+
+The application should feel like a personalized adventure rather than a fixed curriculum.
+
+## Unique experience concept
+
+Imagine a child opening NonoLand.
+
+Nono appears, greets the child by their display name, and introduces a small adventure.
+
+The child enters a colorful world.
+
+A friendly character introduces a challenge.
+
+The child solves a puzzle, explores an environment, learns a new concept, and earns an achievement.
+
+The environment reacts to the child's actions.
+
+Characters celebrate meaningful achievements.
+
+New areas gradually become available.
+
+The next activity is selected according to the child's progress.
+
+The world itself becomes more interesting as the child learns.
+
+This is the experience we want to build.
+
+---
+
+# 3. TARGET AGE GROUPS — FOUR DISTINCT LEARNING EXPERIENCES
+
+This section is one of the most important requirements.
+
+Create four separate educational experiences.
+
+Do not simply change the difficulty of identical questions.
+
+Each age group must have its own:
+
+- Educational objectives.
+- Learning methods.
+- Game mechanics.
+- Assessment design.
+- Question types.
+- Visual complexity.
+- Instruction style.
+- Activity duration.
+- Reward experience.
+- Progress indicators.
+- Content structure.
+
+## AGE GROUP A — 3 TO 4 YEARS
+
+### Development focus
+
+- Early recognition.
+- Listening.
+- Visual discovery.
+- Basic vocabulary.
+- Simple matching.
+- Colors.
+- Shapes.
+- Numbers 1–5.
+- Basic animal recognition.
+- Basic motor interaction.
+- Simple emotions.
+
+### Learning experience
+
+This age group must experience NonoLand as a magical interactive playground.
+
+Do not make the child read instructions.
+
+Use:
+
+- Voice instructions.
+- Large animated objects.
+- Simple visual choices.
+- Friendly character guidance.
+- Drag-and-drop interactions.
+- Tap-to-discover experiences.
+- Sound recognition.
+- Simple visual matching.
+
+### Example activities
+
+1. Find the red balloon.
+2. Touch the sleeping cat.
+3. Match two identical animals.
+4. Count three apples.
+5. Find the big circle.
+6. Listen to an animal sound and select the animal.
+7. Put the sun in the sky.
+8. Identify a happy face.
+9. Discover hidden objects.
+10. Match simple shapes.
+
+### Age-specific assessments
+
+Assessment must be observational and play-based.
+
+Do not use formal examinations or long quizzes.
+
+Measure:
+
+- Object recognition.
+- Visual matching.
+- Listening comprehension.
+- Basic counting.
+- Simple categorization.
+- Response accuracy.
+- Ability to complete simple interactions.
+
+Example:
+
+Nono shows three colorful balloons.
+
+A voice says:
+
+"فين البالونة الحمرا؟"
+
+The child taps a balloon.
+
+The character reacts immediately.
+
+If incorrect, Nono provides a friendly hint and gives another opportunity.
+
+Never use negative sounds, punishment, or embarrassing feedback.
+
+---
+
+## AGE GROUP B — 5 TO 6 YEARS
+
+### Development focus
+
+- Arabic letter recognition.
+- English letter recognition.
+- Letter sounds.
+- Early reading readiness.
+- Numbers 1–20.
+- Basic addition.
+- Basic subtraction.
+- Patterns.
+- Classification.
+- Memory.
+- Simple problem solving.
+- Vocabulary development.
+
+### Learning experience
+
+This age group should experience more structured adventures while maintaining a playful atmosphere.
+
+Introduce:
+
+- Short instructions.
+- Multi-step activities.
+- Letter puzzles.
+- Number challenges.
+- Interactive stories.
+- Sequencing games.
+- Memory games.
+- Simple timed challenges without pressure.
+
+### Example activities
+
+1. Match the Arabic letter to its sound.
+2. Find the first letter of an object.
+3. Complete a simple word.
+4. Count objects and select the correct number.
+5. Solve simple addition.
+6. Complete a color pattern.
+7. Arrange pictures in the correct order.
+8. Match animals to their habitats.
+9. Remember a sequence of objects.
+10. Solve a simple maze.
+
+### Age-specific assessments
+
+Create short interactive assessment sessions.
+
+Each session should evaluate specific skills.
+
+Examples:
+
+- Letter recognition test.
+- Sound recognition challenge.
+- Number recognition test.
+- Counting assessment.
+- Pattern completion challenge.
+- Basic logic assessment.
+- Listening comprehension activity.
+
+Assessment should use multiple question formats rather than repeated multiple-choice questions.
+
+Provide immediate feedback and an understandable parent report.
+
+---
+
+## AGE GROUP C — 7 YEARS
+
+### Development focus
+
+- Reading comprehension.
+- Vocabulary.
+- Spelling.
+- Sentence construction.
+- Addition and subtraction.
+- Early multiplication concepts.
+- Logical reasoning.
+- Memory.
+- Problem solving.
+- Science discovery.
+- Critical thinking.
+
+### Learning experience
+
+The child should feel like an explorer, inventor, detective, and problem solver.
+
+Introduce:
+
+- Multi-step puzzles.
+- Interactive missions.
+- Reading-based adventures.
+- Mathematical challenges.
+- Logic games.
+- Scientific discovery.
+- Story-based decisions.
+- More complex patterns.
+
+### Example activities
+
+1. Read a short sentence and answer a question.
+2. Complete a word using missing letters.
+3. Solve a mathematical puzzle.
+4. Find the incorrect object in a sequence.
+5. Solve a logic maze.
+6. Match scientific objects to their functions.
+7. Follow multi-step instructions.
+8. Complete a story using correct choices.
+9. Solve a memory challenge.
+10. Discover the correct solution to an experiment.
+
+### Age-specific assessments
+
+Create structured skill assessments with:
+
+- Reading comprehension.
+- Vocabulary.
+- Spelling.
+- Mathematical reasoning.
+- Logical thinking.
+- Science understanding.
+- Multi-step problem solving.
+
+Use different question types:
+
+- Multiple choice.
+- Drag and drop.
+- Fill in missing elements.
+- Ordering.
+- Matching.
+- Short interactive scenarios.
+- Puzzle solving.
+
+---
+
+## AGE GROUP D — 8 YEARS
+
+### Development focus
+
+- Reading comprehension.
+- Grammar foundations.
+- Vocabulary expansion.
+- Mathematical reasoning.
+- Multiplication and division foundations.
+- Fractions introduction.
+- Advanced logic.
+- Scientific thinking.
+- Creative problem solving.
+- Decision making.
+- Critical thinking.
+
+### Learning experience
+
+The child should feel like an advanced explorer who solves missions and unlocks complex worlds.
+
+Introduce:
+
+- Multi-stage missions.
+- Complex puzzles.
+- Interactive experiments.
+- Strategy challenges.
+- Reading adventures.
+- Mathematical missions.
+- Creative projects.
+- More independent exploration.
+
+### Example activities
+
+1. Solve a multi-step mathematics challenge.
+2. Read a story and analyze its events.
+3. Identify the correct grammatical structure.
+4. Complete a complex number pattern.
+5. Solve a multi-stage logic puzzle.
+6. Explore a science experiment.
+7. Classify objects using multiple rules.
+8. Build a solution to an environmental challenge.
+9. Solve a mystery using clues.
+10. Create a short interactive story.
+
+### Age-specific assessments
+
+Build more comprehensive but still enjoyable assessment sessions.
+
+Include:
+
+- Reading comprehension.
+- Vocabulary.
+- Language foundations.
+- Mathematical reasoning.
+- Logical reasoning.
+- Science knowledge.
+- Critical thinking.
+- Multi-step problem solving.
+
+Use adaptive question selection based on performance.
+
+Do not create a stressful examination environment.
+
+---
+
+# 4. INITIAL CHILD ASSESSMENT AND PERSONALIZATION
+
+When a parent creates a child profile, collect:
+
+- Display name.
+- Birth month and year or age band.
+- Preferred language.
+- Optional interests.
+- Optional preferred character.
+
+Do not collect unnecessary personal information.
+
+After onboarding, introduce an age-appropriate discovery journey.
+
+This is NOT a stressful placement examination.
+
+It is a short, playful baseline assessment.
+
+### Assessment flow
+
+1. Nono welcomes the child.
+2. Explain that the child will play some fun discovery games.
+3. Present age-appropriate activities.
+4. Observe performance.
+5. Identify initial skill levels.
+6. Build a starting learning profile.
+7. Recommend the first adventure.
+
+The baseline assessment must be adjustable and should not label the child negatively.
+
+### Assessment engine
+
+Create a configurable assessment engine.
+
+Every assessment must define:
+
+- Assessment ID.
+- Age group.
+- Skill category.
+- Difficulty.
+- Question types.
+- Question count.
+- Evaluation rules.
+- Feedback rules.
+- Completion criteria.
+- Recommended next activities.
+
+### Adaptive question selection
+
+The next question should depend on previous answers.
+
+For example:
+
+If the child answers several questions correctly:
+
+- Introduce a slightly more challenging question.
+
+If the child struggles:
+
+- Provide a hint.
+- Simplify the next question.
+- Offer an alternative visual explanation.
+
+If the child demonstrates consistent mastery:
+
+- Introduce a new related skill.
+
+Never increase difficulty based on one correct answer alone.
+
+Use multiple observations.
+
+### Parent assessment report
+
+Parents should see:
+
+- Skills explored.
+- Skills demonstrated.
+- Skills requiring more practice.
+- Suggested activities.
+- Progress over time.
+
+Avoid presenting unsupported developmental or medical conclusions.
+
+---
+
+# 5. THE VISUAL IDENTITY — PREMIUM MAGICAL CARTOON WORLD
+
+This section is extremely important.
+
+Do not create a generic educational app interface.
+
+The application must have a distinctive visual identity that children recognize immediately.
+
+## Art direction
+
+Use a high-quality combination of:
+
+- Premium 3D cartoon-inspired characters.
+- Beautiful 2D illustrated environments.
+- Layered backgrounds.
+- Soft lighting.
+- Colorful landscapes.
+- Playful shapes.
+- Smooth animated transitions.
+- Interactive objects.
+- Expressive character animations.
+
+The overall atmosphere should feel magical, warm, joyful, and adventurous.
+
+The design must be visually rich but never confusing.
+
+## Color palette
+
+Use a coherent design system built around:
+
+- Magical Purple: #8054D9
+- Sky Blue: #39BDF2
+- Sunshine Yellow: #FFD84D
+- Candy Pink: #FF78B7
+- Fresh Green: #55D98B
+- Coral Orange: #FF9360
+- Soft Cream: #FFF8E9
+- Deep Navy: #27345C
+
+Create additional contextual colors for different worlds.
+
+Avoid using every color simultaneously.
+
+Use color hierarchy and contrast carefully.
+
+## Background design
+
+Avoid plain white screens as the default experience.
+
+Create immersive environments with:
+
+- Soft gradients.
+- Clouds.
+- Mountains.
+- Floating islands.
+- Trees.
+- Flowers.
+- Stars.
+- Water.
+- Magical particles.
+- Animated environmental elements.
+
+Backgrounds should be layered to create depth.
+
+Use subtle parallax where appropriate.
+
+## Typography
+
+Arabic must be visually excellent.
+
+Use an appropriate Arabic font such as Cairo, Tajawal, or another licensed and technically suitable font.
+
+English typography should be friendly and highly readable.
+
+Use:
+
+- Large headings.
+- Short labels.
+- Clear hierarchy.
+- Readable body text.
+- Large numbers.
+- Minimal text for younger children.
+
+All layouts must support RTL and LTR properly.
+
+## Buttons
+
+Buttons should feel tactile and playful.
+
+Use:
+
+- Rounded shapes.
+- Clear icons.
+- Subtle gradients.
+- Soft shadows.
+- Press animations.
+- Appropriate sound feedback.
+- Large touch targets.
+
+Every button must have a real function.
+
+Do not create decorative buttons that appear interactive but do nothing.
+
+---
+
+# 6. ADVANCED ANIMATION AND MOTION SYSTEM
+
+NonoLand must feel alive.
+
+Animations are not optional decorative extras.
+
+They are an essential part of the user experience.
+
+Implement a reusable motion design system.
+
+### A. Character animations
+
+Nono and the other characters must have states such as:
+
+- Idle.
+- Walking.
+- Running.
+- Jumping.
+- Waving.
+- Dancing.
+- Laughing.
+- Thinking.
+- Surprised.
+- Excited.
+- Encouraging.
+- Celebrating.
+- Sleeping.
+
+Character expressions must respond to the context.
+
+### B. Interactive animations
+
+When the child touches an object:
+
+- The object reacts.
+- A small animation plays.
+- Appropriate sound feedback occurs.
+- The environment may respond.
+
+Examples:
+
+- A star glows and floats upward.
+- A flower opens when touched.
+- A balloon bounces.
+- A cloud moves away.
+- A treasure chest opens.
+- A character jumps with excitement.
+- A correct answer triggers a joyful celebration.
+
+### C. Screen transitions
+
+Create polished transitions between:
+
+- Home.
+- Adventure map.
+- Worlds.
+- Games.
+- Stories.
+- Rewards.
+- Child room.
+
+Avoid abrupt screen changes.
+
+### D. Game animations
+
+Every game must have:
+
+- Entry animation.
+- Instruction animation.
+- Interaction feedback.
+- Correct-answer feedback.
+- Incorrect-answer encouragement.
+- Completion animation.
+
+### E. Achievement celebrations
+
+When a child completes a major milestone:
+
+- The environment transforms briefly.
+- Nono celebrates.
+- Stars and particles appear.
+- The achievement is displayed.
+- The child receives an appropriate reward.
+
+Do not overuse long celebrations after every small action.
+
+### F. Animation technology
+
+Select the best implementation based on the actual environment.
+
+Possible technologies:
+
+- Lottie.
+- Rive.
+- Flutter animation framework.
+- Flame.
+- CSS animations where appropriate.
+- Web-native animation libraries where appropriate.
+
+Do not force one technology into every feature.
+
+Animations must remain smooth on typical Android devices.
+
+Support reduced-motion preferences where possible.
+
+---
+
+# 7. THE HOME SCREEN — THE MAGIC STARTS HERE
+
+The home screen is one of the most important screens in the entire application.
+
+It must immediately create excitement.
+
+It must not look like a traditional dashboard.
+
+### Required experience
+
+The child opens the application.
+
+A beautiful magical environment appears.
+
+Nono welcomes the child.
+
+The screen contains:
+
+1. Nono's animated character.
+2. Personalized welcome message.
+3. A beautiful adventure entry point.
+4. Continue Your Adventure.
+5. Daily Discovery.
+6. Recommended Activity.
+7. My World.
+8. My Room.
+9. Achievements.
+10. Parent access.
+
+Use large illustrated cards and animated environmental elements.
+
+Do not display too much information at once.
+
+### Dynamic home screen
+
+The home screen should change according to:
+
+- Child's age.
+- Current learning stage.
+- Recent progress.
+- Favorite worlds.
+- Unlocked rewards.
+- Recommended activities.
+
+For example:
+
+A younger child sees simple visual adventures.
+
+An older child sees missions, challenges, and discovery activities.
+
+---
+
+# 8. THE INTERACTIVE ADVENTURE MAP
+
+Create an immersive world map.
+
+The map should be visually exciting and interactive.
+
+It must include ten main educational worlds:
+
+1. Arabic Letters Island.
+2. English Letters Island.
+3. Numbers Kingdom.
+4. Animal Jungle.
+5. Colors and Shapes Garden.
+6. Intelligence Castle.
+7. Science and Discovery Galaxy.
+8. Healthy Body World.
+9. Life Skills Village.
+10. Creativity Island.
+
+Each world should have:
+
+- Unique environment.
+- Unique color identity.
+- Unique characters.
+- Unique animations.
+- Unique activities.
+- Levels.
+- Missions.
+- Rewards.
+- Progress indicators.
+
+Worlds should gradually unlock according to meaningful progress.
+
+Do not block all learning behind a rigid linear sequence.
+
+Allow exploration of suitable activities within the child's age and available content.
+
+The map should have animated environmental details.
+
+Examples:
+
+- Moving clouds.
+- Waterfalls.
+- Flying birds.
+- Glowing stars.
+- Animated trees.
+- Floating islands.
+- Moving boats.
+
+When a child taps a world, animate the transition into it.
+
+---
+
+# 9. THE GAME ENGINE — 50+ REAL ACTIVITIES
+
+Create a reusable game engine that supports multiple educational mechanics.
+
+Initial activities:
+
+1. Drag and Drop.
+2. Match the Pairs.
+3. Find the Correct Answer.
+4. Letter Recognition.
+5. Number Recognition.
+6. Counting Objects.
+7. Puzzle Solving.
+8. Memory Cards.
+9. Shape Matching.
+10. Color Matching.
+11. Listen and Choose.
+12. Sound Recognition.
+13. Animal Identification.
+14. Animal Sound Matching.
+15. Complete the Pattern.
+16. Put Things in Order.
+17. Find the Difference.
+18. Sort Objects.
+19. Build a Word.
+20. Complete the Word.
+21. Simple Addition.
+22. Simple Subtraction.
+23. Maze Adventure.
+24. Hidden Objects.
+25. Picture Sequencing.
+26. Story Choices.
+27. Identify Emotions.
+28. Healthy Food Selection.
+29. Body Parts Matching.
+30. Space Discovery.
+31. Nature Exploration.
+32. Science Experiments.
+33. Coloring.
+34. Free Drawing.
+35. Music and Rhythm.
+36. Sound Memory.
+37. Shadow Matching.
+38. Shape Construction.
+39. Object Classification.
+40. Animal Habitat Matching.
+41. Letter Tracing.
+42. Number Tracing.
+43. Vocabulary Builder.
+44. Listening Comprehension.
+45. Visual Memory.
+46. Direction and Position.
+47. Logic Challenges.
+48. Interactive Story Games.
+49. Parent and Child Challenges.
+50. Creative Building.
+
+### Important implementation requirement
+
+These are game mechanics, not 50 copies of the same template.
+
+Build reusable engines for:
+
+- Matching.
+- Drag and drop.
+- Multiple choice.
+- Sequencing.
+- Memory.
+- Drawing.
+- Puzzle solving.
+- Listening.
+- Reading.
+- Mathematics.
+- Interactive stories.
+
+Use configurable educational content.
+
+Each game must have:
+
+- Name.
+- Age eligibility.
+- Learning objective.
+- Skill category.
+- Difficulty.
+- Instructions.
+- Interaction mechanics.
+- Content.
+- Scoring.
+- Feedback.
+- Completion rules.
+- Progress tracking.
+
+The same learning concept may be presented differently to different age groups.
+
+For example, counting:
+
+- Age 3–4: Tap three visible apples.
+- Age 5–6: Count objects and select the number.
+- Age 7: Solve a short counting problem.
+- Age 8: Solve a multi-step mathematical challenge.
+
+Do not merely reuse the same question with a different number.
+
+---
+
+# 10. THE UNIQUE ADAPTIVE LEARNING ENGINE
+
+Build a personalized learning engine.
+
+Its purpose is to make every child's journey different.
+
+### Inputs
+
+- Age group.
+- Skill performance.
+- Previous attempts.
+- Accuracy.
+- Completed activities.
+- Time spent.
+- Repeated errors.
+- Learning preferences.
+- Parent-selected goals.
+
+### Outputs
+
+- Recommended activity.
+- Difficulty level.
+- Next challenge.
+- Review activity.
+- Suggested world.
+- Learning progress summary.
+
+### Example
+
+Child A is five years old and recognizes letters easily but struggles with sounds.
+
+The system should recommend sound-based activities.
+
+Child B is also five years old but struggles with visual letter recognition.
+
+The system should recommend visual matching and letter discovery.
+
+Both children must not receive the same fixed learning path.
+
+### Adaptive rules
+
+Create a transparent rule-based engine initially.
+
+It should:
+
+1. Identify skills with consistent success.
+2. Identify skills needing additional practice.
+3. Select suitable activities.
+4. Gradually increase difficulty.
+5. Revisit previously learned skills.
+6. Avoid excessive repetition.
+7. Provide alternative explanations.
+8. Track improvement over time.
+
+Do not use a single score to represent the child's intelligence.
+
+Do not compare children.
+
+Do not make medical or psychological diagnoses.
+
+---
+
+# 11. ASSESSMENT CENTER — A DIFFERENT TEST FOR EVERY AGE
+
+Create a dedicated assessment experience called:
+
+## Nono's Discovery Lab
+
+This should be a beautiful, interactive place where children demonstrate what they have learned.
+
+It must not resemble a school examination screen.
+
+Each age group must have different assessment mechanics.
+
+### Age 3–4
+
+- Picture recognition.
+- Sound recognition.
+- Simple matching.
+- Visual selection.
+- Basic counting.
+- Simple object sorting.
+
+Assessment sessions should be very short.
+
+Use voice instructions and large illustrations.
+
+### Age 5–6
+
+- Letter and sound matching.
+- Counting.
+- Basic arithmetic.
+- Patterns.
+- Memory.
+- Picture sequencing.
+- Simple vocabulary.
+
+Use interactive challenges with a variety of question formats.
+
+### Age 7
+
+- Reading comprehension.
+- Spelling.
+- Mathematical reasoning.
+- Logic puzzles.
+- Science knowledge.
+- Multi-step tasks.
+
+### Age 8
+
+- Advanced reading activities.
+- Grammar foundations.
+- Mathematical problem solving.
+- Logical reasoning.
+- Scientific discovery.
+- Complex sequences.
+- Critical thinking.
+
+### Assessment experience
+
+Every assessment must have:
+
+- Welcome scene.
+- Age-appropriate instructions.
+- Progress indication.
+- Varied questions.
+- Immediate feedback where appropriate.
+- Completion celebration.
+- Personalized next-step recommendation.
+
+Do not reveal every answer during a diagnostic assessment if doing so would invalidate the result.
+
+Provide hints in learning practice sessions, but keep diagnostic and practice modes clearly separated.
+
+### Assessment results
+
+Display results using friendly visual language.
+
+For children:
+
+- Skills discovered.
+- Stars earned.
+- New adventures unlocked.
+
+For parents:
+
+- Skill performance.
+- Questions completed.
+- Areas practiced.
+- Areas requiring further practice.
+- Recommended next activities.
+
+Do not exaggerate what an assessment proves.
+
+---
+
+# 12. NONO — THE INTELLIGENT COMPANION
+
+Nono is the heart of NonoLand.
+
+Nono must not be just a static mascot.
+
+Nono should act as an interactive companion.
+
+### Character capabilities
+
+- Welcome the child.
+- Explain instructions.
+- React to answers.
+- Celebrate achievements.
+- Give encouragement.
+- Introduce new worlds.
+- Recommend activities.
+- Appear in stories.
+- Guide exploration.
+
+Nono should have a consistent personality:
+
+- Friendly.
+- Curious.
+- Playful.
+- Encouraging.
+- Kind.
+- Patient.
+
+### Character memory
+
+Within the child's profile, remember appropriate non-sensitive preferences such as:
+
+- Favorite world.
+- Favorite character.
+- Recently completed adventure.
+- Preferred activity types.
+
+Use these preferences to personalize the experience.
+
+Do not pretend to remember information that was not saved.
+
+---
+
+# 13. ORIGINAL STORY AND ADVENTURE SYSTEM
+
+Create original interactive stories.
+
+Each story should contain:
+
+- Main character.
+- Setting.
+- Story scenes.
+- Voice narration.
+- Illustrations.
+- Sound effects.
+- Interactive decisions.
+- Educational objectives.
+- Completion rewards.
+
+The child's decisions may change the next scene.
+
+Example:
+
+Nono discovers a mysterious forest.
+
+The child chooses whether to help a lost animal, find food, or discover the hidden path.
+
+Each choice leads to a meaningful continuation.
+
+Create stories for different age groups.
+
+Younger children receive short visual stories.
+
+Older children receive longer stories with more complex choices and reading challenges.
+
+---
+
+# 14. MY ROOM — THE CHILD'S PERSONAL WORLD
+
+Create a beautiful customizable room.
+
+Children can unlock and place:
+
+- Furniture.
+- Wall decorations.
+- Plants.
+- Toys.
+- Trophies.
+- Stars.
+- Character companions.
+- Special items.
+
+The room should visually reflect the child's progress.
+
+Items are earned through educational achievements.
+
+Avoid monetization mechanics that encourage children to purchase decorations.
+
+Make the room interactive.
+
+Examples:
+
+- Tap a character to see an animation.
+- Tap a trophy to view the achievement.
+- Tap a toy to trigger a playful response.
+- Change room themes using earned items.
+
+---
+
+# 15. DAILY DISCOVERY MISSIONS
+
+Create a daily activity recommendation system.
+
+Examples:
+
+- Discover three animals.
+- Solve one number puzzle.
+- Find five hidden objects.
+- Complete a short story.
+- Explore a new world.
+
+Missions should be age-appropriate and personalized.
+
+Do not use punishment for missed days.
+
+Do not use countdown pressure.
+
+Do not make children feel guilty for not returning.
+
+Daily missions should be optional and enjoyable.
+
+---
+
+# 16. REWARDS AND CINEMATIC CELEBRATIONS
+
+Create a meaningful reward system.
+
+Rewards include:
+
+- Stars.
+- Badges.
+- Medals.
+- Trophies.
+- Character accessories.
+- Room decorations.
+- New areas.
+- Certificates.
+
+### Major achievement sequence
+
+When a child completes a major milestone:
+
+1. The environment changes.
+2. The character reacts.
+3. A celebration animation begins.
+4. Stars or particles appear.
+5. The achievement is displayed.
+6. The reward is granted.
+7. The progress is saved.
+
+Prevent duplicate rewards.
+
+Reward real learning achievements, not just repeated taps.
+
+---
+
+# 17. CERTIFICATE GENERATION SYSTEM
+
+Create a professional certificate system.
+
+Certificates should be awarded after defined educational milestones.
+
+Each certificate includes:
+
+- NonoLand logo.
+- Child's display name.
+- Achievement title.
+- Completed world.
+- Level or milestone.
+- Date.
+- Unique certificate ID.
+- Visual design matching the completed world.
+
+Support:
+
+- In-app certificate gallery.
+- PDF generation.
+- Parent-controlled download.
+- Printing.
+- Parent-controlled sharing.
+
+Certificates must only be issued when completion requirements are met.
+
+---
+
+# 18. PARENT DASHBOARD
+
+Create a separate parent interface.
+
+The parent dashboard should include:
+
+### Child profiles
+
+- Add child.
+- Edit child profile.
+- Select language.
+- Review age band.
+- Manage preferences.
+
+### Learning overview
+
+- Activities completed.
+- Learning time.
+- Worlds explored.
+- Skills practiced.
+- Assessment history.
+- Recent achievements.
+- Certificates earned.
+
+### Learning insights
+
+Show meaningful summaries.
+
+Examples:
+
+- The child has been practicing Arabic letters.
+- Number recognition has improved across recent activities.
+- The child may benefit from more sound-matching games.
+
+Only show insights supported by actual collected data.
+
+### Parent controls
+
+- Screen-time preferences.
+- Language.
+- Audio settings.
+- Downloaded content.
+- Subscription.
+- Privacy.
+- Account management.
+
+Protect parent-only sections with an age-appropriate parental gate.
+
+---
+
+# 19. AUDIO AND VOICE EXPERIENCE
+
+Use sound to improve learning and immersion.
+
+Include:
+
+- Character voices.
+- Instructions.
+- Correct-answer feedback.
+- Encouragement.
+- Animal sounds.
+- Environmental sounds.
+- Background music.
+- Celebration sounds.
+
+Allow parents to control:
+
+- Music volume.
+- Sound effects.
+- Voice narration.
+- Mute mode.
+
+Use original or properly licensed audio.
+
+Speech recognition, if introduced, must be optional and carefully designed for child privacy.
+
+Do not require microphone access for normal application usage.
+
+---
+
+# 20. APPLICATION NAVIGATION
+
+Create a simple, child-friendly navigation system.
+
+Main areas:
+
+1. Home.
+2. Adventure Map.
+3. Games.
+4. Stories.
+5. My Room.
+6. Achievements.
+
+Parent access should be visually separate.
+
+Navigation must adapt to small screens.
+
+Do not overcrowd the interface.
+
+Use large icons and clear visual indicators.
+
+---
+
+# 21. ARABIC AND ENGLISH LOCALIZATION
+
+Arabic is the primary language.
+
+English is the secondary language.
+
+Requirements:
+
+- Complete RTL support.
+- Complete LTR support.
+- Correct Arabic font rendering.
+- Localized audio.
+- Localized educational content.
+- Localized dates and numbers.
+- Correct alignment.
+- Localized certificates.
+- Localized parent reports.
+
+Never assume that changing text alone is sufficient localization.
+
+Test every major screen in both languages.
+
+---
+
+# 22. TECHNICAL ARCHITECTURE
+
+First inspect the actual capabilities and project environment in Google AI Studio.
+
+Choose an architecture that can be implemented reliably in the current environment.
+
+For a web-based full-stack implementation, a suitable stack may include:
+
+- React.
+- TypeScript.
+- Modern component architecture.
+- Responsive CSS.
+- Reusable animation components.
+- A reliable state management approach.
+- Firebase Authentication.
+- Cloud Firestore or another suitable database.
+- Firebase Storage.
+- Cloud Functions where appropriate.
+
+For a dedicated mobile application, consider Flutter and Dart if the environment and delivery workflow support them.
+
+Do not force a Flutter-only architecture if the selected Google AI Studio environment is generating a web application.
+
+The initial application must be responsive and optimized for Android mobile screens.
+
+Keep the code modular and ready for future native mobile packaging.
+
+### Architecture requirements
+
+- Reusable components.
+- Clear separation of concerns.
+- Typed data models.
+- Secure backend integration.
+- Error handling.
+- Loading states.
+- Offline-aware behavior.
+- Testable learning logic.
+- Reusable game engines.
+- Shared design tokens.
+
+Never expose API keys or service credentials in client-side source code.
+
+---
+
+# 23. DATA MODEL
+
+Design the data model around the following entities:
+
+- ParentAccounts.
+- ChildProfiles.
+- AgeGroups.
+- LearningWorlds.
+- LearningSkills.
+- LearningLevels.
+- Activities.
+- Games.
+- GameConfigurations.
+- Questions.
+- AssessmentTemplates.
+- AssessmentSessions.
+- AssessmentAnswers.
+- LearningAttempts.
+- LearningProgress.
+- Recommendations.
+- Rewards.
+- ChildInventory.
+- Achievements.
+- Certificates.
+- Stories.
+- StoryScenes.
+- AudioAssets.
+- VisualAssets.
+- Subscriptions.
+- PurchaseTransactions.
+- DownloadedContent.
+- ParentSettings.
+
+The data model must support:
+
+- Multiple children per parent.
+- Different age-based content.
+- Different assessment templates.
+- Personalized learning paths.
+- Multiple languages.
+- Progress history.
+- Offline synchronization.
+- Secure ownership.
+- Future expansion.
+
+Do not place all educational content in hardcoded UI components.
+
+Store configurable content separately from the presentation layer.
+
+---
+
+# 24. CHILD SAFETY AND SECURITY
+
+Child safety is mandatory.
+
+Implement:
+
+- Parent-controlled accounts.
+- Protected parent areas.
+- Secure authentication.
+- Database access rules.
+- Minimal personal data collection.
+- No public child profiles.
+- No open chat.
+- No communication with strangers.
+- No targeted advertising to children.
+- No unauthorized purchase flows.
+- Secure backend authorization.
+
+For any sensitive permission:
+
+- Explain its purpose to the parent.
+- Request it only when necessary.
+- Provide an alternative where possible.
+
+Do not claim legal or regulatory compliance without actual verification.
+
+Review relevant Google Play Families requirements and applicable privacy laws before release.
+
+---
+
+# 25. OFFLINE SUPPORT
+
+Support downloaded educational content where practical.
+
+The application should:
+
+- Save local progress.
+- Open previously downloaded games.
+- Store completed activities.
+- Queue synchronization.
+- Synchronize safely when internet returns.
+
+Prevent:
+
+- Duplicate rewards.
+- Lost progress.
+- Duplicate certificates.
+- Invalid entitlement changes.
+
+Sensitive operations must be verified by the backend.
+
+---
+
+# 26. PREMIUM EXPERIENCE AND SUBSCRIPTIONS
+
+Use a Freemium business model.
+
+### Free content
+
+Provide meaningful educational experiences without payment.
+
+### Premium content
+
+May include:
+
+- Additional worlds.
+- Advanced games.
+- Extended stories.
+- Additional learning paths.
+- More characters.
+- Additional educational activities.
+
+Possible plans:
+
+- Monthly.
+- Quarterly, if supported.
+- Annual.
+
+Subscription configuration must be managed securely.
+
+Purchases must be parent-controlled.
+
+Use the official supported billing integration for the final distribution platform.
+
+Never encourage children to make purchases.
+
+---
+
+# 27. ADMIN CONTENT MANAGEMENT
+
+Build an administration system that allows authorized administrators to manage:
+
+- Worlds.
+- Games.
+- Activities.
+- Age groups.
+- Assessment templates.
+- Questions.
+- Skills.
+- Learning levels.
+- Stories.
+- Audio.
+- Images.
+- Rewards.
+- Certificates.
+- Premium content availability.
+
+Content should be configurable without rewriting the mobile or web interface.
+
+Protect administrative access.
+
+Keep an audit trail for important content changes.
+
+---
+
+# 28. PERFORMANCE AND ACCESSIBILITY
+
+The application must perform well on common Android devices.
+
+Requirements:
+
+- Responsive layouts.
+- Fast startup.
+- Smooth animations.
+- Optimized assets.
+- Lazy loading.
+- Efficient audio playback.
+- Appropriate memory usage.
+- Large touch targets.
+- Readable Arabic text.
+- Clear contrast.
+- Reduced-motion support.
+- Error recovery.
+
+Avoid excessive animations that reduce performance or distract from learning.
+
+---
+
+# 29. REQUIRED SCREENS
+
+Create the following screens as functional application experiences:
+
+1. Splash Screen.
+2. Onboarding.
+3. Parent Registration.
+4. Parent Login.
+5. Child Profile Creation.
+6. Age Selection.
+7. Language Selection.
+8. Child Welcome Screen.
+9. Baseline Discovery Assessment.
+10. Personalized Home Screen.
+11. Adventure Map.
+12. World Details.
+13. Level Selection.
+14. Game Screen.
+15. Game Results.
+16. Nono's Discovery Lab.
+17. Assessment Results.
+18. Interactive Stories.
+19. Story Details.
+20. My Room.
+21. Character Collection.
+22. Rewards Gallery.
+23. Certificates Gallery.
+24. Parent Dashboard.
+25. Learning Reports.
+26. Parent Settings.
+27. Subscription Screen.
+28. Downloaded Content.
+29. Audio Settings.
+30. Privacy Settings.
+
+Every screen must have a clear purpose and functional navigation.
+
+---
+
+# 30. DEVELOPMENT STRATEGY
+
+Do not attempt to generate the entire product in one uncontrolled code generation operation.
+
+Work in phases.
+
+### PHASE 0 — PROJECT FOUNDATION
+
+- Inspect the project.
+- Understand the available environment.
+- Confirm the framework.
+- Establish architecture.
+- Establish data models.
+- Establish development conventions.
+
+### PHASE 1 — PREMIUM VISUAL IDENTITY
+
+- Create the design system.
+- Define typography.
+- Define colors.
+- Create reusable buttons.
+- Create cards.
+- Create navigation.
+- Establish character art direction.
+- Implement motion standards.
+
+### PHASE 2 — HOME AND NAVIGATION
+
+- Splash.
+- Onboarding.
+- Parent area.
+- Child profiles.
+- Home.
+- Main navigation.
+
+### PHASE 3 — AGE-BASED EXPERIENCE
+
+- Age-specific home screens.
+- Age-based content selection.
+- Age-specific instructions.
+- Age-specific interaction patterns.
+
+### PHASE 4 — ADVENTURE UNIVERSE
+
+- World map.
+- Ten educational worlds.
+- World details.
+- Level progression.
+
+### PHASE 5 — GAME ENGINE
+
+- Reusable game mechanics.
+- Game configurations.
+- Game sessions.
+- Results.
+- Progress tracking.
+
+### PHASE 6 — EDUCATIONAL CONTENT
+
+- Initial 50+ activity catalog.
+- Age-specific versions.
+- Arabic content.
+- English content.
+- Audio instructions.
+
+### PHASE 7 — ASSESSMENT AND PERSONALIZATION
+
+- Baseline assessment.
+- Assessment templates.
+- Skill tracking.
+- Adaptive difficulty.
+- Recommendations.
+
+### PHASE 8 — CHARACTERS AND STORIES
+
+- Nono interactions.
+- Character animations.
+- Interactive stories.
+- Voice and sound.
+
+### PHASE 9 — REWARDS AND CERTIFICATES
+
+- Stars.
+- Achievements.
+- Character unlocks.
+- My Room.
+- Certificates.
+- Celebrations.
+
+### PHASE 10 — PARENT EXPERIENCE
+
+- Parent dashboard.
+- Learning reports.
+- Settings.
+- Privacy.
+- Time controls.
+
+### PHASE 11 — BACKEND AND OFFLINE
+
+- Authentication.
+- Database.
+- Storage.
+- Access rules.
+- Local persistence.
+- Synchronization.
+
+### PHASE 12 — MONETIZATION
+
+- Free content.
+- Premium content.
+- Subscription management.
+- Purchase verification.
+
+### PHASE 13 — TESTING AND RELEASE
+
+- Functional testing.
+- Age-group testing.
+- UI testing.
+- Animation performance.
+- Security review.
+- Accessibility.
+- Release preparation.
+
+---
+
+# 31. IMPORTANT GOOGLE AI STUDIO EXECUTION INSTRUCTIONS
+
+You must work with the actual capabilities of the selected Google AI Studio environment.
+
+Before implementing:
+
+1. Inspect the existing files.
+2. Understand the application structure.
+3. Identify the current framework.
+4. Identify existing functionality.
+5. Identify missing functionality.
+6. Identify available integrations.
+7. Present a development plan.
+
+Then begin implementation in the current project.
+
+Do not create a separate unrelated project for each feature.
+
+Do not overwrite working files without a reason.
+
+Do not remove existing functionality unnecessarily.
+
+Do not invent successful backend connections.
+
+Do not use fake buttons or fake navigation.
+
+Do not fill the application with repeated placeholder content and call it complete.
+
+If a feature cannot be completed in the current environment, explain the limitation and implement the best valid structure without claiming it is finished.
+
+Use original visual assets or properly licensed assets.
+
+Do not use copyrighted cartoon characters or unlicensed commercial artwork.
+
+---
+
+# 32. QUALITY ACCEPTANCE CRITERIA
+
+The product is not considered successful unless the following conditions are met:
+
+### Design
+
+- The interface is visually distinctive.
+- The application does not look like a generic template.
+- The home screen is exciting.
+- The worlds feel different.
+- Animations are smooth and purposeful.
+- Arabic and English layouts work correctly.
+- All screens share one coherent visual identity.
+
+### Educational experience
+
+- Each age group has different learning experiences.
+- Questions are appropriate for the selected age band.
+- Assessments use varied interaction types.
+- Learning progress is tracked.
+- Recommendations are based on actual progress.
+- The child is never punished for mistakes.
+
+### Functionality
+
+- Navigation works.
+- Games can be played.
+- Results are saved.
+- Progress updates.
+- Rewards are granted correctly.
+- Certificates follow completion rules.
+- Parent areas are protected.
+
+### Technical quality
+
+- Code is modular.
+- Components are reusable.
+- Data is modeled properly.
+- Backend permissions are secure.
+- Errors are handled.
+- Tests are executed.
+- Known limitations are documented.
+
+---
+
+# 33. FIRST EXECUTION TASK
+
+Start now.
+
+Your first task is to inspect the available project and build the initial NonoLand foundation.
+
+Then implement the following first milestone:
+
+1. Premium visual identity.
+2. Beautiful animated splash screen.
+3. Child-friendly onboarding.
+4. Parent and child profile flow.
+5. Age selection.
+6. Language selection.
+7. Personalized child home screen.
+8. Interactive Nono mascot.
+9. Initial animated adventure map.
+10. Initial world selection experience.
+
+The home screen must be especially impressive.
+
+It should immediately communicate that NonoLand is a unique magical learning universe.
+
+Do not stop after creating a static mockup.
+
+Implement working interactions and navigation.
+
+Use high-quality visual assets, layered backgrounds, smooth animations, and responsive layouts.
+
+After completing this milestone:
+
+- Run the application.
+- Test the main navigation.
+- Test Arabic RTL.
+- Test English LTR.
+- Test different age profiles.
+- Verify the major interactions.
+- Fix obvious visual and functional problems.
+- Report exactly what works and what remains incomplete.
+
+Do not claim features are complete if they are only visual placeholders.
+
+---
+
+# FINAL CREATIVE DIRECTION
+
+NonoLand must become a product that children recognize, love, and want to explore.
+
+The child should not feel that they are opening an educational test application.
+
+They should feel that they are entering their own magical world.
+
+A world where:
+
+- Nono knows their adventure.
+- Every island has a new discovery.
+- Every game has a purpose.
+- Every age has a different experience.
+- Every achievement matters.
+- Every child can progress at their own pace.
+- Learning feels like an adventure.
+
+**Create something genuinely distinctive, not another ordinary children's learning app.**
+
+# NONOLAND
+## Every Child. A Different World. A Unique Adventure.
